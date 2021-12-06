@@ -12,7 +12,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>spring-cloud</groupId>
-    <artifactId>eureka-client</artifactId>
+    <artifactId>eureka-consumer</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>eureka-consumer-ribbon</module>
+        <module>eureka-consumer-feign</module>
+    </modules>
 
     <dependencies>
         <dependency>
@@ -22,13 +27,15 @@
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
+
+
     </dependencies>
 
     <dependencyManagement>
@@ -37,7 +44,6 @@
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
                 <version>Dalston.SR1</version>
-<!--                <version>Dalston.RELEASE</version>-->
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
