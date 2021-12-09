@@ -7,9 +7,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="eurekaserver" />
-        <module name="eurekaconsumerfeign" />
+        <module name="eureka-client" />
         <module name="eurekaconsumerribbon" />
+        <module name="config-client" />
+        <module name="eurekaconsumerfeign" />
         <module name="eurekaclient" />
+        <module name="config-server-git" />
+        <module name="eureka-consumer-ribbon" />
+        <module name="eureka-consumer-feign" />
+        <module name="eureka-server" />
       </profile>
     </annotationProcessing>
   </component>
